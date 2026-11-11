@@ -57,6 +57,13 @@ jobs:
           cache: npm
           registry-url: https://npm.pkg.github.com
           scope: "@hr-arsha"
+      
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          registry-url: https://registry.npmjs.org
+          scope: "@hrarsha"
 
       - run: npm ci
       - run: npm publish

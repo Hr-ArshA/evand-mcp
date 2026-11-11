@@ -1,26 +1,36 @@
 {
-  "name": "@hr-arsha/evand-mcp",
+  "name": "@hrarsha/evand-mcp",
   "version": "0.1.0",
   "description": "Read-only MCP server for discovering events, organizers, cities and categories on Evand (evand.com)",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "evand",
+    "events",
+    "iran"
+  ],
+  "homepage": "https://github.com/Hr-ArshA/evand-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/Hr-ArshA/evand-mcp/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hr-ArshA/evand-mcp.git"
+  },
+  "license": "MIT",
+  "author": "https://github.com/Hr-ArshA",
   "type": "module",
+  "main": "index.js",
   "bin": {
     "evand-mcp": "dist/index.js"
+  },
+  "directories": {
+    "test": "test"
   },
   "files": [
     "dist",
     "README.md"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Hr-ArshA/evand-mcp.git"
-  },
-  "homepage": "https://github.com/Hr-ArshA/evand-mcp#readme",
-  "bugs": {
-    "url": "https://github.com/Hr-ArshA/evand-mcp/issues"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "scripts": {
     "build": "tsc && node -e \"require('fs').chmodSync('dist/index.js', 0o755)\"",
     "start": "node dist/index.js",
@@ -31,17 +41,6 @@
     "check": "npm run typecheck && npm test",
     "prepublishOnly": "npm run build"
   },
-  "keywords": [
-    "mcp",
-    "model-context-protocol",
-    "evand",
-    "events",
-    "iran"
-  ],
-  "license": "MIT",
-  "engines": {
-    "node": ">=20"
-  },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.32.2",
     "zod": "^4.6.7"
@@ -51,5 +50,11 @@
     "tsx": "^4.23.15",
     "typescript": "^5.9.0",
     "vitest": "^5.1.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
   }
 }
