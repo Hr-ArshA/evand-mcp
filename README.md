@@ -2,7 +2,7 @@
 
 An unofficial [Model Context Protocol](https://modelcontextprotocol.io) server for **[Evand (ایوند)](https://evand.com/)** — the Iranian platform for discovering events, webinars, conferences, workshops and courses.
 
-![Cover.png](./assets/cover.png)
+![Cover.png](https://github.com/Hr-ArshA/evand-mcp/raw/main/assets/cover.png)
 
 It exposes Evand's public event data as read-only MCP tools, so assistants such as Claude, Cursor, VS Code Copilot and other MCP clients can search events, inspect ticket prices and availability, read descriptions, and find organizers. Purchases always happen on evand.com.
 
